@@ -1,10 +1,10 @@
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import useSWR from "swr";
 
 const fetcher = url => fetch(url).then(res => res.json());
-export default function Home() {
+export default function Business() {
   const { data, error } = useSWR(
-    "/api/news/headline",
+    "/api/news/business",
     fetcher
   );
 
