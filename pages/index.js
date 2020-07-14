@@ -29,7 +29,7 @@ export default function Home() {
 
                     <div className="content">
                       {article.description}.
-                      <a href={article.url} target="_blank">Lanjut Baca yuk</a>
+                      <a href={article.url} target="_blank">[Lanjut Baca yuk]</a>
                       
                       <br />
                       <time dateTime={article.publishedAt}>{article.publishedAt}</time>
