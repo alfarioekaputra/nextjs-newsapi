@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from "next/router";
 
 export default ({ children }) => {
     /*
@@ -12,7 +13,9 @@ export default ({ children }) => {
       document.querySelector('#burger').classList.toggle('is-active')
       document.querySelector('#navbarmenu').classList.toggle('is-active')
     }
-  
+
+    const router = useRouter();
+    
     return (
       <div>
         <Head>
@@ -35,10 +38,16 @@ export default ({ children }) => {
             <div id="navbarmenu" className="navbar-menu">
               <div className="navbar-start">
                 <Link href="/">
-                  <a className="navbar-item">Home</a>
+                  <a className={router.pathname == "/" ? "navbar-item is-active is-tab" : "navbar-item"}>Home</a>
                 </Link>
                 <Link href="/news/business">
-                  <a className="navbar-item">Bisnis</a>
+                  <a className={router.pathname == "/news/business" ? "navbar-item is-active is-tab" : "navbar-item"}>Bisnis</a>
+                </Link>
+                <Link href="/news/sports">
+                  <a className={router.pathname == "/news/sports" ? "navbar-item is-active is-tab" : "navbar-item"}>Olahraga</a>
+                </Link>
+                <Link href="/contact">
+                  <a className={router.pathname == "/contact" ? "navbar-item is-active is-tab" : "navbar-item"}>Contact Us</a>
                 </Link>
               </div>
               

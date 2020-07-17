@@ -10,10 +10,16 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "bulma": "^0.9.0",
+    "lodash": "^4.17.19",
     "next": "9.4.4",
+    "next-redux-wrapper": "^6.0.2",
     "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-hook-form": "^6.0.7",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "swr": "^0.2.3"
   }
 }
