@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 
 import Layout from '../components/layout'
-import Input from '../components/form/input';
+import Input from '../components/Form/Input';
 import React, {useState} from 'react';
 
 export default function Contact() {
