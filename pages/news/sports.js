@@ -1,11 +1,11 @@
-import Layout from '../components/layout';
-import NewsList from '../components/NewsList';
+import Layout from '../../components/layout';
+import NewsList from '../../components/NewsList';
 import useSWR from "swr";
 
 const fetcher = url => fetch(url).then(res => res.json());
-export default function Home() {
+export default function Business() {
   const { data, error } = useSWR(
-    "/api/news/headline",
+    "/api/news/sports",
     fetcher
   );
 
